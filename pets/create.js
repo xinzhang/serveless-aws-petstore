@@ -2,7 +2,7 @@ const uuid = require('uuid');
 
 const AWS = require('aws-sdk');
 
-const dynamoDb = new AWS.dynamoDb.DocumentClient();
+const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
 module.exports.create = (event, context, callback) => {
     const timestamp = new Date().getTime();
